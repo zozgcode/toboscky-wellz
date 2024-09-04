@@ -626,7 +626,7 @@ export const mockAccounts: Account[] = [
         dateTime: "August 25, 2024, 9:15:00 am",
         description: "Rental Income from ABC Holdings",
         status: "Success",
-        amount_usd: 15000.0,
+        amount_usd: 15250.0,
         account_no: "****3746",
       },
       {
@@ -634,7 +634,7 @@ export const mockAccounts: Account[] = [
         dateTime: "July 14, 2024, 11:45:00 am",
         description: "Lease Payment from DEF Holdings",
         status: "Success",
-        amount_usd: 18000.0,
+        amount_usd: 18300.0,
         account_no: "****2478",
       },
       {
@@ -642,7 +642,7 @@ export const mockAccounts: Account[] = [
         dateTime: "June 5, 2024, 3:30:00 pm",
         description: "Sale Proceeds from GHI Holdings",
         status: "Success",
-        amount_usd: 22000.0,
+        amount_usd: 22500.0,
         account_no: "****3425",
       },
       {
@@ -650,7 +650,7 @@ export const mockAccounts: Account[] = [
         dateTime: "May 20, 2023, 2:15:00 pm",
         description: "Rental Income from JKL Holdings",
         status: "Success",
-        amount_usd: 15000.0,
+        amount_usd: 15700.0,
         account_no: "****2583",
       },
       {
@@ -658,7 +658,7 @@ export const mockAccounts: Account[] = [
         dateTime: "April 18, 2023, 9:50:00 am",
         description: "Lease Payment from MNO Holdings",
         status: "Success",
-        amount_usd: 18000.0,
+        amount_usd: 18800.0,
         account_no: "****9237",
       },
       {
@@ -666,7 +666,7 @@ export const mockAccounts: Account[] = [
         dateTime: "March 11, 2023, 1:40:00 pm",
         description: "Sale Proceeds from PQR Holdings",
         status: "Success",
-        amount_usd: 22000.0,
+        amount_usd: 23000.0,
         account_no: "****5006",
       },
       {
@@ -674,7 +674,7 @@ export const mockAccounts: Account[] = [
         dateTime: "November 14, 2022, 11:30:00 am",
         description: "Rental Income from STU Holdings",
         status: "Success",
-        amount_usd: 15000.0,
+        amount_usd: 16200.0,
         account_no: "****4673",
       },
       {
@@ -682,7 +682,7 @@ export const mockAccounts: Account[] = [
         dateTime: "October 20, 2022, 4:25:00 pm",
         description: "Lease Payment from VWX Holdings",
         status: "Success",
-        amount_usd: 18000.0,
+        amount_usd: 19300.0,
         account_no: "****2453",
       },
       {
@@ -690,7 +690,7 @@ export const mockAccounts: Account[] = [
         dateTime: "September 9, 2022, 9:15:00 am",
         description: "Sale Proceeds from YZA Holdings",
         status: "Success",
-        amount_usd: 22000.0,
+        amount_usd: 23500.0,
         account_no: "****5009",
       },
       {
@@ -698,7 +698,7 @@ export const mockAccounts: Account[] = [
         dateTime: "August 22, 2022, 10:00:00 am",
         description: "Rental Income from BCD Holdings",
         status: "Success",
-        amount_usd: 15000.0,
+        amount_usd: 16700.0,
         account_no: "****3564",
       },
       {
@@ -706,7 +706,7 @@ export const mockAccounts: Account[] = [
         dateTime: "June 17, 2021, 3:20:00 pm",
         description: "Lease Payment from EFG Holdings",
         status: "Success",
-        amount_usd: 18000.0,
+        amount_usd: 19850.0,
         account_no: "****5011",
       },
       {
@@ -714,7 +714,7 @@ export const mockAccounts: Account[] = [
         dateTime: "May 20, 2021, 1:55:00 pm",
         description: "Sale Proceeds from HIJ Holdings",
         status: "Success",
-        amount_usd: 22000.0,
+        amount_usd: 24000.0,
         account_no: "****5012",
       },
       {
@@ -722,7 +722,7 @@ export const mockAccounts: Account[] = [
         dateTime: "May 5, 2022, 11:45:00 am",
         description: "Rental Income from KLM Holdings",
         status: "Success",
-        amount_usd: 15000.0,
+        amount_usd: 17250.0,
         account_no: "****2356",
       },
       {
@@ -730,7 +730,7 @@ export const mockAccounts: Account[] = [
         dateTime: "August 15, 2021, 10:10:00 am",
         description: "Lease Payment from NOP Holdings",
         status: "Success",
-        amount_usd: 18000.0,
+        amount_usd: 20300.0,
         account_no: "****5014",
       },
       {
@@ -738,7 +738,7 @@ export const mockAccounts: Account[] = [
         dateTime: "July 5, 2021, 3:40:00 pm",
         description: "Sale Proceeds from QRS Holdings",
         status: "Success",
-        amount_usd: 22000.0,
+        amount_usd: 24500.0,
         account_no: "****7653",
       },
       {
@@ -746,7 +746,7 @@ export const mockAccounts: Account[] = [
         dateTime: "May 14, 2021, 11:25:00 am",
         description: "Rental Income from TUV Holdings",
         status: "Success",
-        amount_usd: 15000.0,
+        amount_usd: 17800.0,
         account_no: "****5016",
       },
       {
@@ -754,7 +754,7 @@ export const mockAccounts: Account[] = [
         dateTime: "April 22, 2021, 2:00:00 pm",
         description: "Lease Payment from WXY Holdings",
         status: "Success",
-        amount_usd: 18000.0,
+        amount_usd: 20800.0,
         account_no: "****5017",
       },
       {
@@ -762,7 +762,7 @@ export const mockAccounts: Account[] = [
         dateTime: "March 8, 2021, 4:35:00 pm",
         description: "Sale Proceeds from ZAB Holdings",
         status: "Success",
-        amount_usd: 22000.0,
+        amount_usd: 25000.0,
         account_no: "****5018",
       },
       {
@@ -770,7 +770,7 @@ export const mockAccounts: Account[] = [
         dateTime: "January 12, 2021, 10:50:00 am",
         description: "Rental Income from CDE Holdings",
         status: "Success",
-        amount_usd: 15000.0,
+        amount_usd: 18300.0,
         account_no: "****5019",
       },
       {
@@ -778,7 +778,7 @@ export const mockAccounts: Account[] = [
         dateTime: "September 20, 2020, 3:15:00 pm",
         description: "Lease Payment from FGH Holdings",
         status: "Success",
-        amount_usd: 18000.0,
+        amount_usd: 21300.0,
         account_no: "****5020",
       },
       {
@@ -786,7 +786,7 @@ export const mockAccounts: Account[] = [
         dateTime: "July 9, 2020, 1:30:00 pm",
         description: "Sale Proceeds from IJK Holdings",
         status: "Success",
-        amount_usd: 22000.0,
+        amount_usd: 25500.0,
         account_no: "****5021",
       },
       {
@@ -794,7 +794,7 @@ export const mockAccounts: Account[] = [
         dateTime: "June 18, 2020, 9:40:00 am",
         description: "Rental Income from LMN Holdings",
         status: "Success",
-        amount_usd: 15000.0,
+        amount_usd: 18800.0,
         account_no: "****5022",
       },
       {
@@ -802,7 +802,7 @@ export const mockAccounts: Account[] = [
         dateTime: "May 25, 2020, 11:55:00 am",
         description: "Lease Payment from OPQ Holdings",
         status: "Success",
-        amount_usd: 18000.0,
+        amount_usd: 21800.0,
         account_no: "****5023",
       },
       {
@@ -810,7 +810,7 @@ export const mockAccounts: Account[] = [
         dateTime: "April 5, 2020, 3:20:00 pm",
         description: "Sale Proceeds from RST Holdings",
         status: "Success",
-        amount_usd: 22000.0,
+        amount_usd: 26000.0,
         account_no: "****5024",
       },
       {
@@ -818,7 +818,7 @@ export const mockAccounts: Account[] = [
         dateTime: "March 30, 2020, 10:05:00 am",
         description: "Rental Income from UVW Holdings",
         status: "Success",
-        amount_usd: 15000.0,
+        amount_usd: 19300.0,
         account_no: "****5025",
       },
     ],
