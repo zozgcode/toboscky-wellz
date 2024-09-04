@@ -26,8 +26,8 @@ export default function Dashboard() {
   };
 
   const showAlert = () => {
-    alert("Contact your bank to open an account")
-  }
+    alert("Contact your bank to open an account");
+  };
 
   if (!user) {
     return <div>Loading, please wait...</div>;
@@ -36,10 +36,10 @@ export default function Dashboard() {
   const date = new Date();
   const hour = date.getHours();
 
-   const currentDate = new Date().toLocaleDateString('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
+  const currentDate = new Date().toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
   });
 
   return (
@@ -47,8 +47,30 @@ export default function Dashboard() {
       <Header handleLogout={handleLogout} user={user} />
       <div className="w-[100%] p-[20px] bg-[#d71e28] relative">
         <div className="text-white text-[14px]">
-        {hour >= 12 ? (hour >= 17 ? "Good evening" : "Good afternoon") : "Good morning"} {user.holder.jointNames && <><br /> <span className=" text-lg">Joint account of: <br /></span></> }
-        {user.holder.jointNames ? <span className="font-medium text-lg"> {user.holder.jointNames}</span> : <span className="font-medium text-lg"> {user.holder.firstName}</span> }
+          {hour >= 12
+            ? hour >= 17
+              ? "Good evening"
+              : "Good afternoon"
+            : "Good morning"}{" "}
+          {user.holder.jointNames && (
+            <>
+              <br />{" "}
+              <span className=" text-lg">
+                Joint account of: <br />
+              </span>
+            </>
+          )}
+          {user.holder.jointNames ? (
+            <span className="font-medium text-lg">
+              {" "}
+              {user.holder.jointNames}
+            </span>
+          ) : (
+            <span className="font-medium text-lg">
+              {" "}
+              {user.holder.firstName}
+            </span>
+          )}
           <br />
           {currentDate}
           <div className="flex items-center gap-[10px] mt-[10px]">
@@ -82,26 +104,68 @@ export default function Dashboard() {
             ></path>
           </svg>
         </div>
-        <div className="w-full rounded-[5px] overflow-hidden border border-[#d71e28]">
-          <div className="p-[10px_20px] bg-[#d71e28] text-white text-[14px]">
-            Bank accounts(1)
-          </div>
-          <div className="p-[10px_20px]">
-            <p className="text-[12px]">CHECKING ACCOUNT</p>
-            <div className="flex justify-end">
-              <div className="font-[400] text-[20px] flex flex-col items-end">
-                {formatCurrency(user.bank_details.balance_usd)}
-                <br />
-                <span className="text-[12px] text-right">
-                  Available balance
-                </span>
+        <div className="flex flex-col gap-3">
+          <div className="w-full rounded-[5px] overflow-hidden border border-[#d71e28]">
+            <div className="p-[10px_20px] bg-[#d71e28] text-white text-[14px]">
+              Bank accounts(1)
+            </div>
+            <div className="p-[10px_20px]">
+              <p className="text-[12px]">CHECKING ACCOUNT</p>
+              <div className="flex justify-end">
+                <div className="font-[400] text-[20px] flex flex-col items-end">
+                  {formatCurrency(user.bank_details.balance_usd)}
+                  <br />
+                  <span className="text-[12px] text-right">
+                    Available balance
+                  </span>
+                </div>
               </div>
             </div>
           </div>
+          {user.bank_details.savings_balance_usd && (
+            <div className="w-full rounded-[5px] overflow-hidden border border-[#d71e28]">
+              <div className="p-[10px_20px] bg-[#d71e28] text-white text-[14px]">
+                Bank accounts(2)
+              </div>
+              <div className="p-[10px_20px]">
+                <p className="text-[12px]">SAVINGS ACCOUNT</p>
+                <div className="flex justify-end">
+                  <div className="font-[400] text-[20px] flex flex-col items-end">
+                    {formatCurrency(user.bank_details.savings_balance_usd)}
+                    <br />
+                    <span className="text-[12px] text-right">
+                      Available balance
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          {user.bank_details.investment_balance_usd && (
+            <div className="w-full rounded-[5px] overflow-hidden border border-[#d71e28]">
+              <div className="p-[10px_20px] bg-[#d71e28] text-white text-[14px]">
+                Bank accounts(3)
+              </div>
+              <div className="p-[10px_20px]">
+                <p className="text-[12px]">INVESTMENTS ACCOUNT</p>
+                <div className="flex justify-end">
+                  <div className="font-[400] text-[20px] flex flex-col items-end">
+                    {formatCurrency(user.bank_details.investment_balance_usd)}
+                    <br />
+                    <span className="text-[12px] text-right">
+                      Available balance
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
-      <button className="w-[90%] mx-auto border border-dashed border-zinc-400 p-[10px_20px] rounded flex items-center justify-center gap-[5px] mb-[20px]"
-      onClick={showAlert}
+
+      <button
+        className="w-[90%] mx-auto border border-dashed border-zinc-400 p-[10px_20px] rounded flex items-center justify-center gap-[5px] mb-[20px]"
+        onClick={showAlert}
       >
         <span>+</span>
         <span>Open an account</span>
@@ -181,7 +245,7 @@ export default function Dashboard() {
           </svg>
         </div>
       </div>
-      <TransactionHistory user={user}/>
+      <TransactionHistory user={user} />
     </div>
   );
 }

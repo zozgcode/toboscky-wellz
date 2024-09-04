@@ -9,13 +9,11 @@ export interface Account {
     password: string;
   };
   bank_details: {
-    bank_name?: string;
-    branch?: string;
     account_number?: string;
-    routing_number?: string;
-    swift_code?: string;
     account_type: string;
     balance_usd: number;
+    savings_balance_usd?: number;
+    investment_balance_usd?: number;
   };
   transaction_mgs_code: {
     transaction_text_msg?: string;
