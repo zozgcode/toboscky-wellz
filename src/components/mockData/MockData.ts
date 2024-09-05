@@ -606,7 +606,7 @@ export const mockAccounts: Account[] = [
       lastName: "",
       jointNames: "",
       username: "McDanielAA",
-      password: "GoodGod26!37!-!1!1!",
+      password: "GoodGod26!37@1",
     },
     bank_details: {
       account_type: "Checking",
